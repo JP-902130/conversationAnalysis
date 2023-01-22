@@ -16,13 +16,8 @@ sys.setrecursionlimit(1500)
 
 
 def main():
-    load_dotenv(find_dotenv())
-    print(os.environ.get("PRIVATE_KEY"))
 
-    df = getDummyDataAndStoreInExcel.getWholeDF(1000)
-    df['TimeStamp'] = pd.to_datetime(df['TimeStamp'])
-    # visualization.visualizeActiveHoursInTheDay(df)
-    print(sentimentAnalysis.happyIndex("fuck!"))
+    return
 
 
 main()
